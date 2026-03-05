@@ -8,34 +8,28 @@ namespace MonsterAG
 {
     public class Ghost
     {
+        private readonly string name;
+        private int size;
+
         public Ghost(string name)
         {
-            throw new NotImplementedException();
+            this.name = name ?? throw new ArgumentNullException(nameof(name));
+            this.size = 1 ;
         }
-
         public string Name
         {
-            get
-            {
-                throw new NotImplementedException()();
-            }
+            get { return name; }
         }
 
         public int Size
         {
-            get
-            {
-                throw new NotImplementedException()();
-            }
-            set
-            {
-                throw new NotImplementedException()();
-            }
+            get { return size; }
+            set { size = value; }
         }
 
         public string Haunt()
         {
-            throw new NotImplementedException()();
+            return $"{Name} haunts!";
         }
     }
 }

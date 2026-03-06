@@ -29,7 +29,7 @@ namespace MonsterAG
 
         public string Haunt()
         {
-            return $"{Name} haunts!";
+            return $"{Name} sagt: 'Buh'";
         }
     }
 }
